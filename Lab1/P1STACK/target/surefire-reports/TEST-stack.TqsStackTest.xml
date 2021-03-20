@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="stack.TqsStackTest" time="0.053" tests="9" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="stack.TqsStackTest" time="0.043" tests="9" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.0-M1/junit-jupiter-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.0-M1/junit-jupiter-api-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.8.0-M1/junit-platform-commons-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.0-M1/junit-jupiter-params-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.0-M1/junit-jupiter-engine-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.8.0-M1/junit-platform-engine-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.20/kotlin-stdlib-jdk8-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.20/kotlin-stdlib-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.20/kotlin-stdlib-common-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.20/kotlin-stdlib-jdk7-1.4.20.jar:"/>
+    <property name="java.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.0-M1/junit-jupiter-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.0-M1/junit-jupiter-api-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.8.0-M1/junit-platform-commons-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.0-M1/junit-jupiter-params-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.0-M1/junit-jupiter-engine-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.8.0-M1/junit-platform-engine-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.20/kotlin-stdlib-jdk8-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.20/kotlin-stdlib-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.20/kotlin-stdlib-common-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.20/kotlin-stdlib-jdk7-1.4.20.jar:"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK/target/surefire/surefirebooter8402056013253068273.jar /home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK/target/surefire 2021-03-18T22-04-45_841-jvmRun1 surefire3413116591424587844tmp surefire_08440816857796690969tmp"/>
+    <property name="sun.java.command" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK/target/surefire/surefirebooter7654192286410041300.jar /home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK/target/surefire 2021-03-20T15-37-24_827-jvmRun1 surefire3944419330975665458tmp surefire_013467326385344089453tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.0-M1/junit-jupiter-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.0-M1/junit-jupiter-api-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.8.0-M1/junit-platform-commons-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.0-M1/junit-jupiter-params-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.0-M1/junit-jupiter-engine-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.8.0-M1/junit-platform-engine-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.20/kotlin-stdlib-jdk8-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.20/kotlin-stdlib-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.20/kotlin-stdlib-common-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.20/kotlin-stdlib-jdk7-1.4.20.jar:"/>
+    <property name="surefire.test.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.0-M1/junit-jupiter-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.0-M1/junit-jupiter-api-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.1/apiguardian-api-1.1.1.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.8.0-M1/junit-platform-commons-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.0-M1/junit-jupiter-params-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.0-M1/junit-jupiter-engine-5.8.0-M1.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.8.0-M1/junit-platform-engine-1.8.0-M1.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk8/1.4.20/kotlin-stdlib-jdk8-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib/1.4.20/kotlin-stdlib-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-common/1.4.20/kotlin-stdlib-common-1.4.20.jar:/home/ricardo/.m2/repository/org/jetbrains/annotations/13.0/annotations-13.0.jar:/home/ricardo/.m2/repository/org/jetbrains/kotlin/kotlin-stdlib-jdk7/1.4.20/kotlin-stdlib-jdk7-1.4.20.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/ricardo"/>
     <property name="user.language" value="pt"/>
@@ -26,18 +26,18 @@
     <property name="java.version.date" value="2021-01-19"/>
     <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK"/>
+    <property name="basedir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK/target/surefire/surefirebooter8402056013253068273.jar"/>
+    <property name="surefire.real.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK/target/surefire/surefirebooter7654192286410041300.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.10+9-Ubuntu-0ubuntu1.20.04"/>
     <property name="user.name" value="ricardo"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.4.0-66-generic"/>
+    <property name="os.version" value="5.4.0-67-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -46,7 +46,7 @@
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="idea.version" value="2020.3.3"/>
     <property name="java.version" value="11.0.10"/>
-    <property name="user.dir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX1_STACK"/>
+    <property name="user.dir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P1STACK"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -58,13 +58,13 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testStackSizeAfterNPush" classname="stack.TqsStackTest" time="0.03"/>
-  <testcase name="testPushOnFullStack" classname="stack.TqsStackTest" time="0.002"/>
+  <testcase name="testStackSizeAfterNPush" classname="stack.TqsStackTest" time="0.023"/>
+  <testcase name="testPushOnFullStack" classname="stack.TqsStackTest" time="0.001"/>
   <testcase name="testStackValuePopped" classname="stack.TqsStackTest" time="0.002"/>
-  <testcase name="testPopOnEmptyStack" classname="stack.TqsStackTest" time="0.001"/>
+  <testcase name="testPopOnEmptyStack" classname="stack.TqsStackTest" time="0.002"/>
   <testcase name="testStackValuePeekedSize" classname="stack.TqsStackTest" time="0.001"/>
-  <testcase name="testStackSizeZero" classname="stack.TqsStackTest" time="0.001"/>
-  <testcase name="testStackIsEmptySizeZeroNPop" classname="stack.TqsStackTest" time="0.002"/>
+  <testcase name="testStackSizeZero" classname="stack.TqsStackTest" time="0"/>
+  <testcase name="testStackIsEmptySizeZeroNPop" classname="stack.TqsStackTest" time="0.001"/>
   <testcase name="testPeekOnEmptyStack" classname="stack.TqsStackTest" time="0.001"/>
   <testcase name="testStackIsEmpty" classname="stack.TqsStackTest" time="0.001"/>
 </testsuite>

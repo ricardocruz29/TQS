@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="euromillions.DipTest" time="0.046" tests="3" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="euromillions.DipTest" time="0.058" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="gnome"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.specification.version" value="11"/>
     <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:"/>
+    <property name="java.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://ubuntu.com/"/>
@@ -16,9 +16,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="PT"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
-    <property name="sun.java.command" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION/target/surefire/surefirebooter3563537766205696434.jar /home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION/target/surefire 2021-03-18T22-05-29_366-jvmRun1 surefire4062195514274836495tmp surefire_06859969121751115015tmp"/>
+    <property name="sun.java.command" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS/target/surefire/surefirebooter14557559298670188315.jar /home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS/target/surefire 2021-03-20T15-34-14_190-jvmRun1 surefire18223578313337855552tmp surefire_07064384642700694621tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:"/>
+    <property name="surefire.test.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS/target/test-classes:/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS/target/classes:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.6.0/junit-jupiter-engine-5.6.0.jar:/home/ricardo/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-engine/1.6.0/junit-platform-engine-1.6.0.jar:/home/ricardo/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/home/ricardo/.m2/repository/org/junit/platform/junit-platform-commons/1.6.0/junit-platform-commons-1.6.0.jar:/home/ricardo/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.6.0/junit-jupiter-api-5.6.0.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/home/ricardo"/>
     <property name="user.language" value="pt"/>
@@ -26,18 +26,18 @@
     <property name="java.version.date" value="2021-01-19"/>
     <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION"/>
+    <property name="basedir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION/target/surefire/surefirebooter3563537766205696434.jar"/>
+    <property name="surefire.real.class.path" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS/target/surefire/surefirebooter14557559298670188315.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.10+9-Ubuntu-0ubuntu1.20.04"/>
     <property name="user.name" value="ricardo"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="5.4.0-66-generic"/>
+    <property name="os.version" value="5.4.0-67-generic"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
@@ -46,7 +46,7 @@
     <property name="java.io.tmpdir" value="/tmp"/>
     <property name="idea.version" value="2020.3.3"/>
     <property name="java.version" value="11.0.10"/>
-    <property name="user.dir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/TQS_EX2_EUROMILLION"/>
+    <property name="user.dir" value="/home/ricardo/Desktop/TQS/TQS/Lab1/P2EUROMILLIONS"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
@@ -58,7 +58,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testConstructorFromBadRange" classname="euromillions.DipTest" time="0.031"/>
-  <testcase name="testConstructorFromBadArrays" classname="euromillions.DipTest" time="0.001"/>
-  <testcase name="testFormat" classname="euromillions.DipTest" time="0.005"/>
+  <testcase name="testConstructorFromBadRange" classname="euromillions.DipTest" time="0.042"/>
+  <testcase name="testConstructorFromBadArrays" classname="euromillions.DipTest" time="0.002"/>
+  <testcase name="testFormat" classname="euromillions.DipTest" time="0.006"/>
 </testsuite>
