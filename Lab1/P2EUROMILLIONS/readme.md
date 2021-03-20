@@ -43,4 +43,5 @@ Changes made in tests (Will enumerate just a few of them -> Check them out in th
         static int ARRAY_SIZE_NUMBERS = 5;
         static int ARRAY_SIZE_STARS = 2;
 
+## AVISO: FALTA RESPONDER AS PERGUNTAS 2d). Será resolvido dia 20/3.
 2d) Use Jacoco : https://www.baeldung.com/jacoco to get analysis
