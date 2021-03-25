@@ -13,6 +13,7 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.util.Formatter;
 import java.util.Locale;
@@ -39,9 +40,15 @@ public class AddressResolver {
         uriBuilder.addParameter("includeRoadMetadata", "true");
 
 
+
+
         System.err.println(" url is --> " + uriBuilder.build().toString() + " <--");
 
         String response = this.httpClient.get(uriBuilder.build().toString());
+
+        if (response == null){
+            throw new MalformedURLException();
+        }
 
         System.out.println("JSON is: >" + response + "<");
 

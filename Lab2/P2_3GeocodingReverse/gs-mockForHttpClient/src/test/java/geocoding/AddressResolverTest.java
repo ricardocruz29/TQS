@@ -43,18 +43,6 @@ class AddressResolverTest {
         //test
         Address result2 = resolver.findAddressForLocation(40.631803, -8.657881);
         assertEquals( result2, new Address( "Parque Estacionamento da Reitoria - Univerisdade de Aveiro", "Glória e Vera Cruz", "Centro", "3810-193", null) );
-
-
-        //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!COPIAR ISTO PARA O README!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        //I know it might be overkill to do 2 exame same texts, but because I'm not familiarized with the API i wanna make sure it is okay.
-        //we confirmed that even tho Mock da smp a mesma resposta n da hipotese de ele falhar
-        //findAdressForLocation invocates to the remote service, we verify that the json valido e verificamos se consegue fazer o parsing
-        //e retornar o resultado correto.
-        // We are not testing that the API works properly, that wouldnt be done with unit testes
-        //We are testing this method findAdress -> we only need to mock the ISimpleHttpClient and test with real examples, that simulate that with the API will work fine
-        //
-        //Este exercicio pede um teste de integraçao. O que vamos ver neste teste é se a classe AdressResolver funciona bem com a API do MapQuest
-        //Vamos entao ativar o nosso teste com a API remota -> saimos do campo dos mocks.
     }
 
 
@@ -66,13 +54,4 @@ class AddressResolverTest {
 
         assertThrows( IndexOutOfBoundsException.class, () -> resolver.findAddressForLocation(-200,-200), "Bad coordinates not accepted");
     }
-
-    @Test
-    public void whenURLisNull_throwNullURL() throws IOException, URISyntaxException, ParseException{
-        String jsonResponse = "{\"info\":{\"statuscode\":0,\"copyright\":{\"text\":\"\\u00A9 2021 MapQuest, Inc.\",\"imageUrl\":\"http://api.mqcdn.com/res/mqlogo.gif\",\"imageAltText\":\"\\u00A9 2021 MapQuest, Inc.\"},\"messages\":[]},\"options\":{\"maxResults\":1,\"thumbMaps\":true,\"ignoreLatLngInput\":false},\"results\":[{\"providedLocation\":{\"latLng\":{\"lat\":40.6318,\"lng\":-8.658}},\"locations\":[{\"street\":\"Parque Estacionamento da Reitoria - Univerisdade de Aveiro\",\"adminArea6\":\"\",\"adminArea6Type\":\"Neighborhood\",\"adminArea5\":\"Gl\\u00F3ria e Vera Cruz\",\"adminArea5Type\":\"City\",\"adminArea4\":\"\",\"adminArea4Type\":\"County\",\"adminArea3\":\"Centro\",\"adminArea3Type\":\"State\",\"adminArea1\":\"PT\",\"adminArea1Type\":\"Country\",\"postalCode\":\"3810-193\",\"geocodeQualityCode\":\"P1AAA\",\"geocodeQuality\":\"POINT\",\"dragPoint\":false,\"sideOfStreet\":\"N\",\"linkId\":\"0\",\"unknownInput\":\"\",\"type\":\"s\",\"latLng\":{\"lat\":40.631803,\"lng\":-8.657881},\"displayLatLng\":{\"lat\":40.631803,\"lng\":-8.657881},\"mapUrl\":\"http://open.mapquestapi.com/staticmap/v5/map?key=uXSAVwYWbf9tJmsjEGHKKAo0gOjZfBLQ&type=map&size=225,160&locations=40.6318025,-8.657881|marker-sm-50318A-1&scalebar=true&zoom=15&rand=-412011571\",\"roadMetadata\":null}]}]}";
-        when(httpClient.get( contains(""))).thenThrow(IndexOutOfBoundsException.class);
-        assertThrows( IndexOutOfBoundsException.class, () -> resolver.findAddressForLocation(-200,-200), "Null URL was passed");
-    }
-
-
 }

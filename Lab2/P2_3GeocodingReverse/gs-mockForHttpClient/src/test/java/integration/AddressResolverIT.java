@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -37,5 +38,4 @@ public class AddressResolverIT {
     public void whenBadCoordidates_trhowBadArrayindex() throws IOException, URISyntaxException, ParseException {
         assertThrows( IndexOutOfBoundsException.class, () -> resolver.findAddressForLocation(-200,-200), "Bad coordinates not accepted");
     }
-
 }
