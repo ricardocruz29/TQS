@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-class SampleTest {
+class TestEx1{
     WebDriver browser = null;
 
     @BeforeEach

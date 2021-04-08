@@ -1,0 +1,10 @@
+-------------------------------------------------------------------------------
+Test set: TestEx3_d_docker
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.023 s <<< FAILURE! - in TestEx3_d_docker
+testChrome{RemoteWebDriver}  Time elapsed: 0.017 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [org.openqa.selenium.remote.RemoteWebDriver arg0] in method [void TestEx3_d_docker.testChrome(org.openqa.selenium.remote.RemoteWebDriver)].
+
+testChromeWithVersion{RemoteWebDriver}  Time elapsed: 0.001 s  <<< ERROR!
+org.junit.jupiter.api.extension.ParameterResolutionException: No ParameterResolver registered for parameter [org.openqa.selenium.remote.RemoteWebDriver arg0] in method [void TestEx3_d_docker.testChromeWithVersion(org.openqa.selenium.remote.RemoteWebDriver)].
+

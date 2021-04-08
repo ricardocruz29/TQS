@@ -4,9 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2ecff39-b7c3-4634-be13-54255dfe074a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../Lab1/TQS-202021 Weekly labs.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../P1Stock/Lab2_Stock/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../P1Stock/Lab2_Stock/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a1015648-80d4-4492-a7e8-885873ca990f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Lab3/SampleLab1/src/test/java/SampleTest/TestEx2_Blaze.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab2/P2/SampleLab1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/SampleLab1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/SampleLab1/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/src/test/java/SampleTest/BlazeTestTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/src/test/java/SampleTest/SampleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/SampleLab1/src/test/java/SampleTest/TestEx1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/SampleLab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../Lab3/SampleLab1/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/target/test-classes/SampleTest/BlazeTestTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Lab3/SampleLab1/target/test-classes/SampleTest/SampleTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +29,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1qn9WXTt5vi6M5OR0uP9TviYqdi" />
+  <component name="ProjectId" id="1qsuiAVsZai8F60Jhzi1w2D6UkI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -34,17 +42,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../P1Stock/Lab2_Stock" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-  </component>
-  <component name="RunAnythingCache">
-    <option name="myCommands">
-      <command value="mvn install" />
-      <command value="mvn clean install -U" />
-    </option>
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab3/Ex4_ObjectPattern" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
@@ -62,12 +60,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="a2ecff39-b7c3-4634-be13-54255dfe074a" name="Default Changelist" comment="" />
-      <created>1617704521374</created>
+      <changelist id="a1015648-80d4-4492-a7e8-885873ca990f" name="Default Changelist" comment="" />
+      <created>1617880744896</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1617704521374</updated>
-      <workItem from="1617704523791" duration="1986000" />
+      <updated>1617880744896</updated>
+      <workItem from="1617880746128" duration="1628000" />
     </task>
     <servers />
   </component>
