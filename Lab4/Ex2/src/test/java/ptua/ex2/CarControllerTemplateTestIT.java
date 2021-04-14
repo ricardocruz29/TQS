@@ -11,6 +11,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.test.context.TestPropertySource;
 import ptua.ex2.Model.Car;
 import ptua.ex2.Repository.CarRepository;
 
@@ -21,10 +22,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 
-// switch AutoConfigureTestDatabase with TestPropertySource to use a real database
-//@TestPropertySource( locations = "application-integrationtest.properties")
-
-@AutoConfigureTestDatabase
+//@AutoConfigureTestDatabase
+@TestPropertySource( locations = "application-integrationtest.properties")
 public class CarControllerTemplateTestIT {
     @LocalServerPort
     int randomServerPort;
@@ -64,8 +63,6 @@ public class CarControllerTemplateTestIT {
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(response.getBody()).extracting(Car::getMaker).containsExactly("BMW","Fiat");
         assertThat(response.getBody()).extracting(Car::getModel).containsExactly("M4","Punto");
-
-
     }
 
     private void createTestCar(String model, String maker) {
