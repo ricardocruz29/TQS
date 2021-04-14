@@ -6,9 +6,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Objects;
 
-import lombok.Data;
+//import lombok.Data;
 
-@Data
+//@Data
 @Entity
 public class Car {
     @Id
@@ -52,9 +52,9 @@ public class Car {
     }
 
     /* Getters & Setters
-     Generated automatically by library lombok
+     Generated automatically by library lombok (bugs of importing)
     */
-    /*
+
     public Long getCarId() {
         return carId;
     }
@@ -78,5 +78,5 @@ public class Car {
     public void setMaker(String maker) {
         this.maker = maker;
     }
-    */
+
 }

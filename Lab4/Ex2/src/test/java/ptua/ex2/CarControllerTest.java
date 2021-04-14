@@ -37,10 +37,10 @@ public class CarControllerTest {
         bmw.setCarId(1L);
         //Simulate when we try to save a car it returns the previously created. Remember we have just the skeleton of carService
         //Do this when we don't have carService yet
-        given(carService.getCarDetails(Long.valueOf("1"))).willReturn(bmw);
+        given(carService.save(Mockito.any())).willReturn(bmw);
         //when( carService.save(Mockito.any())).thenReturn(bmw);
 
-
+        System.out.println(bmw);
         mvc.perform(post("/api/cars").contentType(MediaType.APPLICATION_JSON).content(JsonUtil.toJson(bmw)))
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.model", is("M4")))

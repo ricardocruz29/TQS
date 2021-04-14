@@ -36,7 +36,7 @@ public class CarManagerServiceTest {
     public void testValidId_CarFound() {
         //Check if the method is working properly and returning the previously 2 cars
         Car bmw_found = carService.getCarDetails(Long.valueOf("1"));
-        assertThat(bmw_found .getModel()).isEqualTo("M4");
+        assertThat(bmw_found.getModel()).isEqualTo("M4");
 
         Car fiat_found = carService.getCarDetails(Long.valueOf("2"));
         assertThat(fiat_found.getModel()).isEqualTo("Punto");
