@@ -2,6 +2,7 @@ package ptua;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.text.IsEqualIgnoringWhiteSpace.*;
 
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -34,8 +35,11 @@ public class SearchStepsBlaze {
 
     @And("I check the flights available from a location to another are {string} and {string}")
     public void iCheckFlights(String flights_from, String flights_to) {
-        assertThat(webDriver.findElement(By.name("fromPort")).getText(), is(flights_from));
-        assertThat(webDriver.findElement(By.name("toPort")).getText(), is(flights_to));
+        String fromPort = webDriver.findElement(By.name("fromPort")).getText();
+        fromPort = fromPort.replaceAll("\n", " ");
+        assertThat( fromPort, equalToIgnoringWhiteSpace(flights_from));    String toPort = webDriver.findElement(By.name("toPort")).getText();
+        toPort = toPort.replaceAll( "\n", " ");
+        assertThat( toPort, equalToIgnoringWhiteSpace(flights_to));
     }
 
     @Then("I want to book a flight from {string} to {string}")
