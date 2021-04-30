@@ -4,35 +4,43 @@ import euromillions.CuponEuromillions;
 import euromillions.Dip;
 import euromillions.EuromillionsDraw;
 
-<span class="nc" id="L7">public class DemoMain {</span>
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+<span class="nc" id="L10">public class DemoMain {</span>
 
     /**
      * demonstrates a client for ramdom euromillions bets
      */
     public static void main(String[] args) {
+        // Create Logger object
+<span class="nc" id="L17">        Logger logger = Logger.getLogger(DemoMain.class.getName());</span>
 
         // played sheet
-<span class="nc" id="L15">        CuponEuromillions thisWeek = new CuponEuromillions();</span>
-<span class="nc" id="L16">        System.out.println(&quot;Betting with three random bets...&quot;);</span>
-<span class="nc" id="L17">        thisWeek.addDipToCuppon(Dip.generateRandomDip());</span>
-<span class="nc" id="L18">        thisWeek.addDipToCuppon(Dip.generateRandomDip());</span>
-<span class="nc" id="L19">        thisWeek.addDipToCuppon(Dip.generateRandomDip());</span>
+<span class="nc" id="L20">        CuponEuromillions thisWeek = new CuponEuromillions();</span>
+<span class="nc" id="L21">        logger.log(Level.INFO, &quot;Betting with three random bets...&quot;);</span>
+<span class="nc" id="L22">        thisWeek.addDipToCuppon(Dip.generateRandomDip());</span>
+<span class="nc" id="L23">        thisWeek.addDipToCuppon(Dip.generateRandomDip());</span>
+<span class="nc" id="L24">        thisWeek.addDipToCuppon(Dip.generateRandomDip());</span>
 
         // simulate a random draw
-<span class="nc" id="L22">        EuromillionsDraw draw = EuromillionsDraw.generateRandomDraw();</span>
+<span class="nc" id="L27">        EuromillionsDraw draw = EuromillionsDraw.generateRandomDraw();</span>
 
         //report results
-<span class="nc" id="L25">        System.out.println(&quot;You played:&quot;);</span>
-<span class="nc" id="L26">        System.out.println(thisWeek.format());</span>
+<span class="nc" id="L30">        logger.log(Level.INFO, &quot;You played:&quot;);</span>
+<span class="nc" id="L31">        String pl = thisWeek.format();</span>
+<span class="nc" id="L32">        logger.log(Level.INFO, pl);</span>
 
-<span class="nc" id="L28">        System.out.println(&quot;Draw results:&quot;);</span>
-<span class="nc" id="L29">        System.out.println(draw.getDrawResults().format());</span>
+<span class="nc" id="L34">        logger.log(Level.INFO, &quot;Draw results:&quot;);</span>
+<span class="nc" id="L35">        String results = draw.getDrawResults().format();</span>
+<span class="nc" id="L36">        logger.log(Level.INFO, results);</span>
 
-<span class="nc" id="L31">        System.out.println(&quot;Your score:&quot;);</span>
-<span class="nc bnc" id="L32" title="All 2 branches missed.">        for (Dip dip : draw.findMatches(thisWeek)) {</span>
-<span class="nc" id="L33">            System.out.println(dip.format());</span>
+<span class="nc" id="L38">        logger.log(Level.INFO, &quot;Your score:&quot;);</span>
+<span class="nc bnc" id="L39" title="All 2 branches missed.">        for (Dip dip : draw.findMatches(thisWeek)) {</span>
+<span class="nc" id="L40">            String score = dip.format();</span>
+<span class="nc" id="L41">            logger.log(Level.INFO, score);</span>
 
-<span class="nc" id="L35">        }</span>
-<span class="nc" id="L36">    }</span>
+<span class="nc" id="L43">        }</span>
+<span class="nc" id="L44">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>

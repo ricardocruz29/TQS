@@ -63,18 +63,16 @@ public class Dip {
         Random generator = new Random();
 
         Dip randomDip = new Dip();
-        for (int i = MIN_NUMBERS; i < ARRAY_SIZE_NUMBERS; ) {
+        for (int i = MIN_NUMBERS; i < ARRAY_SIZE_NUMBERS; i++) {
             int candidate = generator.nextInt(MAX_NUMBERS - 1) + 1;
             if (!randomDip.getNumbersColl().contains(candidate)) {
                 randomDip.getNumbersColl().add(candidate);
-                i++;
             }
         }
-        for (int i = MIN_STARS; i < ARRAY_SIZE_STARS; ) {
+        for (int i = MIN_STARS; i < ARRAY_SIZE_STARS; i++) {
             int candidate = generator.nextInt(MAX_STARS - 1) + 1;
             if (!randomDip.getStarsColl().contains(candidate)) {
                 randomDip.getStarsColl().add(candidate);
-                i++;
             }
         }
         return randomDip;
