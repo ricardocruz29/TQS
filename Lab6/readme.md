@@ -71,7 +71,7 @@ This step was already done in lab 2.
 
 There are 40 Uncovered Lines and 13 Uncovered Conditions. We already discussed this values in Lab 2, but this lines and conditions are missing mainly because they are code that IDE done therefore not needing any tests to run in them. That would be overkill but for better information check Lab2.
 
-# 3
+# 3 (This exercise was done by Covinfo19 team: Ricardo Cruz, Diogo Carvalho, Rafael Baptista, Pedro Amaral)
 
 For this exercise we will check last semester work done in IES. 
 
