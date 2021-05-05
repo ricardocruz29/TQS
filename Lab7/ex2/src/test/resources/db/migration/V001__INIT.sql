@@ -2,7 +2,7 @@ CREATE TABLE tqs_employee
 (
     id    BIGSERIAL PRIMARY KEY,
     name  varchar(25) NOT NULL,
-    email varchar(25) NOT NULL,
+    email varchar(50) NOT NULL,
     unique (email)
 );
 
