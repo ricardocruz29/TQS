@@ -34,6 +34,7 @@ class Ex2ApplicationTests {
 	void contextLoads() {
 		Employee emp = new Employee();
 		emp.setName("Testcontainers");
+		emp.setEmail("testecontainer@something.com");
 		employeeRepository.save(emp);
 		System.out.println("Context loads!");
 	}
