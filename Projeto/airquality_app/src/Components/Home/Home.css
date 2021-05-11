@@ -1,0 +1,84 @@
+.home{
+    background-color: white;
+}
+
+.home-title{
+    padding: 1em 0 1em 0;
+    transform: rotate(-11deg);
+    font-size: 4rem;
+    color: rgb(47, 150, 240);
+}
+
+.home-title span{
+    color: #1ae8d3;
+}
+
+.home-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.ti-div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 380px;
+}
+
+.ti-div.img{
+    width: 50%;
+    padding: 2em 0;
+}
+
+.ti-div.text{
+    width: 40%;
+}
+
+.home-image{
+    width: 70%;
+    max-width: 650px;
+    min-width: 350px;
+    height: auto;
+}
+
+.text{
+    font-size: 1.2rem;
+    color: rgb(64, 115, 182);
+}
+
+.button-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 0;
+}
+
+.button{
+    text-align: center;
+    padding: 1em 1.5em;
+    border: 3px solid white;
+    color: white;
+    transition: 1s transform, 1s box-shadow, 1s border, 1s color;
+    background-color: #1ae8d3;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 4.3em;
+}
+
+.button:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 15px;
+    transform: scale(1.1);
+    border: 3px solid rgb(73, 146, 214);
+    color:rgb(73, 146, 214);
+}
+
+@media screen and (max-width: 992px) {
+
+.ti-div.img{
+    padding-left: 0;
+}
+
+}
