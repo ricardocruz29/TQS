@@ -1,0 +1,1 @@
+password admin jenkins: 7468e1faa3ca4aa7be09a78077d26338
