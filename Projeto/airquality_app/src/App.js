@@ -4,7 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 /* icons */
 import * as RiIcons from 'react-icons/ri';
-import * as SiIcons from 'react-icons/si';
 
 /* router */
 import {Link, BrowserRouter, Route, Switch, withRouter} from 'react-router-dom';
@@ -72,11 +71,11 @@ function App() {
           </Switch>
         </div>
 
-        <footer className="footer">
+        {/* <footer className="footer">
           <h6>2021 - Rights reserved to Ricardo Cruz</h6>
-          <a href="https://www.linkedin.com/in/ricardo-cruz-139599208/" target="_blank"><i><SiIcons.SiLinkedin/></i></a>
-          <a href="https://github.com/ricardocruz29" target="_blank"><i><SiIcons.SiGithub/></i></a>
-        </footer>
+          <a href="https://www.linkedin.com/in/ricardo-cruz-139599208/" target="_blank" rel="noreferrer"><i><SiIcons.SiLinkedin/></i></a>
+          <a href="https://github.com/ricardocruz29" target="_blank" rel="noreferrer"><i><SiIcons.SiGithub/></i></a>
+        </footer> */}
       </div>
     </BrowserRouter>
     

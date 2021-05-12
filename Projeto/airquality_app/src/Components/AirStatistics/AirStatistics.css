@@ -30,28 +30,175 @@
 
 .mode-section{    
     display: flex;
-    flex-direction: wrap;
+    flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .mode-section > *{
     flex-basis: 50%;
 }
 
-.by-city{
-    height: 200px;
-    background-color: green;
+
+.by-city, .by-lat-long{
+    padding: 1em;
 }
 
 
-.by-day{
-    height: 200px;
-    background-color: blue;
+input{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.card h5{
+    font-size: 1.5em;
+    text-align: center;
+    color: #1ae8d3;
+    transition: 1s color;
+}
+
+.card i{
+    font-size: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2em 0 0.2em 0;
+    color: #1ae8d3;
+    transition: 1s color;
+}
+
+.card {
+    padding: 1em;
+    border: 3px solid #1ae8d3;
+    transition: 1s border, 1s box-shadow, 1s transform, 1s opacity;
+}
+
+.card.mode-active{
+    transform: scale(1.1);
+    border: 3px solid rgb(47, 150, 240);
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 15px;
+}
+
+.card.mode-active > * {
+    color: rgb(47, 150, 240);
+}
+
+.card.mode-not-active{
+    opacity: 0.4;
+}
+
+.card:hover{
+    cursor: pointer;
+    border: 3px solid rgb(47, 150, 240);
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 15px;
+}
+
+.card:hover h5{
+    color: rgb(47, 150, 240);
+}
+
+.card:hover i{
+    color: rgb(47, 150, 240);
+}
+
+.select{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.select select{
+    color: rgb(47, 150, 240);
+}
+
+
+.lat_long{
+    display: flex;
+    justify-content: center;
+}
+
+.lat_long input{
+    width: 40% !important; 
+    margin: 0 1em;
+    padding: 0.8em 0em;
+    color: rgb(47, 150, 240);
+    font-size: 0.7em;
+}
+
+
+.select{
+    opacity: 0;
+    transition: 1s opacity;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.appear{
+    opacity: 1;
 }
 
 .results-section{
-    height: 200px;
-    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid rgb(47, 150, 240);
+    padding: 1.5em 0;
+    box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 15px;
+    max-width: 500px;
+    margin-left: 5%;
+}
+
+.results-section h6{
+    font-size: 1.1em;
+    color: rgb(47, 150, 240);
+    margin-bottom: 1.6em;
+}
+
+.air-results{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.air-results > * {
+    flex-basis: 33%;
+}
+
+.result-card{
+    margin: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 10px;
+}
+
+.result-card.good{
+    border: 3px solid rgb(38, 226, 38);
+    color: rgb(38, 226, 38);
+    background-color: rgb(238, 255, 238);
+}
+
+.result-card.moderate{
+    border: 3px solid rgb(255, 196, 0);
+    color: rgb(255, 196, 0);
+    background-color: rgb(253, 246, 223);
+}
+
+.result-card.Danger{
+    border: 3px solid rgb(230, 50, 50);
+    color:rgb(230, 50, 50);
+    background-color: rgb(255, 224, 224);
+}
+
+.result-card.null{
+    display: none;
 }
 
 
