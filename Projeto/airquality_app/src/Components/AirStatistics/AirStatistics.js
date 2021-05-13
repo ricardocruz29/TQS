@@ -206,6 +206,21 @@ function AirStatistics() {
 
     }
 
+    function checkRange(lat, lon) {
+        var InRange = false;
+
+        const minLat = -90.0;
+        const maxLat = 90.0;
+        const minLon = -180.0;
+        const maxLon = 180.0;
+
+        if ( (minLat <= lat && lat <= maxLat) && (minLon <= lon && lon <= maxLon) ){
+            InRange = true;
+        }
+
+        return InRange;
+    }
+
     async function Search(){
         const BASE_URL = "http://localhost:8080/airMetricsAPI/";
 
@@ -225,7 +240,9 @@ function AirStatistics() {
 
             if (lat === "" || long === ""){
                 alert("When searching by latitude and longitude, you have to fill both fields !")
-            } else {
+            } else if(!checkRange(lat,long)){
+                alert("Latitude and longitude must be in bounds. Latitude [-90,90] . Longitude [-180,180]")
+            }else {
                 let result = await AirQualityService.getAirMetricsByLatLong(BASE_URL, lat, long);
                 setResultLatLong([result]);
                
@@ -234,7 +251,6 @@ function AirStatistics() {
         } else {
             alert("You have to search either by City or Latitude and Longitude. Choose one mode !")
         }
-
         
     }
 
@@ -251,9 +267,13 @@ function AirStatistics() {
                                 <div id="sel-city" className="select">
                                     <select id="city-choose" data-dropdown defaultValue="Choose a city" required>
                                         <option value="" disabled hidden>Choose a city</option>
-                                        <option value="Afganistan">Afghanistan</option>
-                                        <option value="Beijing">Portugal</option>
-                                        <option value="Lisbon">Porto</option>
+                                        <option value="Lisbon">Lisbon</option>
+                                        <option value="Porto">Porto</option>
+                                        <option value="Madrid">Madrid</option>
+                                        <option value="Beijing">Beijing</option>
+                                        <option value="Kampala">Kampala</option>
+                                        <option value="Kilis">Kilis</option>
+                                        <option value="Paris">Paris</option>
                                     </select>
                                 </div>
                             </div>
@@ -270,7 +290,7 @@ function AirStatistics() {
                             </div>
                         </div>
 
-                        <button className="searc-button" onClick={() => Search()} >Search</button>
+                        <button className="search-button" onClick={() => Search()} >Search</button>
                     </div>
                     
                         {

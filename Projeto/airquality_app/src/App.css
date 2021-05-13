@@ -7,6 +7,9 @@
 
 .all{
   position: relative;
+  display: flex;
+  flex-direction: column;
+
 }
 
 a{
@@ -135,10 +138,6 @@ a{
 }
 
 .footer{
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  left: 0;
   width: 100%;
   height: 3.5em;
   background: linear-gradient(150deg,#1a58b5, #1ae8d3);
@@ -148,6 +147,7 @@ a{
   align-items: center;
   gap: 2em;
   color: white;
+  align-self: flex-end;
 }
 
 .footer h6{

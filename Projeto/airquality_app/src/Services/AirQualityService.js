@@ -2,6 +2,7 @@ class AirQualityService {
     async getAirMetricsByCity(BASE_URL, city) {
         var url = BASE_URL + "getAirMetricsCity?city=" + city;
 
+
         var result = await fetch(url);
 
         return result.json();
@@ -20,8 +21,9 @@ class AirQualityService {
 
         var result = await fetch(url);
 
-        return result.json();
+        return await result.json();
     }
+
 }
 
 export default new AirQualityService();

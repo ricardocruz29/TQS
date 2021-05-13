@@ -140,6 +140,14 @@ input{
     opacity: 1;
 }
 
+.search-button{
+    padding: 1em;
+    margin: 5em 0;
+    color: rgb(47, 150, 240);
+    border: 3px solid rgb(47, 150, 240);
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 10px;
+}
+
 .results-section{
     display: flex;
     justify-content: center;
@@ -150,6 +158,7 @@ input{
     box-shadow: rgba(0, 0, 0, 0.35) 10px 15px 15px;
     max-width: 500px;
     margin-left: 5%;
+    align-self: flex-start;
 }
 
 .results-section h6{

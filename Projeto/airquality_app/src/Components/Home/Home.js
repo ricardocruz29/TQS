@@ -1,5 +1,7 @@
 import './Home.css';
 
+import {Link} from 'react-router-dom';
+
 function Home() {
     return(
         <div className="col-md-12 home">
@@ -10,13 +12,16 @@ function Home() {
                         <img src={process.env.PUBLIC_URL + "/images/air.png"} className="home-image" alt="home"></img>
                     </div>
                     <div className="ti-div text">
-                        <p className="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                        <p className="text">Hello there! . In this app you can see information about air quality and we have data about almost every city in the world. To search this, you have 2 modes. You can search by city name, or simply typing it's latitude and longitude. Hope you enjoy !!</p>
                     </div>
                 </div>
                 <div className="button-section">
-                    <div className="button">
-                        <h3>Check Air Statistics</h3>
-                    </div>
+                    <Link to="/air">
+                        <div className="button">
+                            <h3>Check Air Statistics</h3>
+                        </div>
+                    </Link>
+                    
                 </div>
                 
             </div>
