@@ -1,7 +1,13 @@
-API: https://aqicn.org/map/world/
+# AirQuality APP
+
+## Description
+
+This project relies on the development of a web app where it is possible to search air metrics of some citys in the world. In my project, and with the external API I used, I was able to let search by city, and latitude and longitude.
+In this project there is also the objective of doing an API to contact with the WebApp and this API must have a cache to store data. 
+Last but not least, it should have all the sorts of tests.
+
+## Developed by: Ricardo Cruz (93118)
 
 
-entrei com a conta do gmail : rsc2000e2013@gmail.com
-token: 70516169ef686d1ea7477f1715454d4638046301
-
-exemplo de pedido: https://api.waqi.info/feed/beijing/?token=70516169ef686d1ea7477f1715454d4638046301
+## note:
+External API used: https://aqicn.org/map/world/
