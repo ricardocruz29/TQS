@@ -9,5 +9,5 @@ Last but not least, it should have all the sorts of tests.
 ## Developed by: Ricardo Cruz (93118)
 
 
-## note:
-External API used: https://aqicn.org/map/world/
+## note: External API used: https://aqicn.org/map/world/
+
