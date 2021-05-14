@@ -8,6 +8,7 @@ class AirqualityApiApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }

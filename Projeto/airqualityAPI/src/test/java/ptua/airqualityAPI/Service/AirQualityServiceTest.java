@@ -1,6 +1,7 @@
 package ptua.airqualityAPI.Service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -11,6 +12,7 @@ import org.mockito.Mockito;
 import org.mockito.internal.verification.VerificationModeFactory;
 import org.mockito.junit.jupiter.MockitoExtension;
 import ptua.airqualityAPI.API.AQICN_API;
+import ptua.airqualityAPI.Cache.Cache;
 import ptua.airqualityAPI.Models.AirMetricsData;
 import ptua.airqualityAPI.Services.AirQualityService;
 
@@ -24,6 +26,7 @@ import static org.mockito.Mockito.verify;
        -Check when requesting Air data from latitude and longitude, the correct result is returned
        -Check if latitude or longitude are invalid then null is returned
        -Check if the the same city is requested many times, the api method only will be called once, wheter for city or latitude and longitude.
+       -Check if the Cache is when requested is the expected.
 */
 @ExtendWith(MockitoExtension.class)
 public class AirQualityServiceTest {

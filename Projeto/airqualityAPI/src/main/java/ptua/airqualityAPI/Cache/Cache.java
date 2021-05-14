@@ -77,7 +77,7 @@ public class Cache {
         List<Double> lat_long = createList(latitude,longitude);
 
         if (!this.requests_lat_long.containsKey(lat_long)){
-            logger.log(Level.WARNING, "Cache doesn't contain information about this latitude and longitude");
+            logger.log(Level.WARNING, "Cache does not contain information about this latitude and longitude");
             this.n_misses++;
         } else if (checkIfExpired(lat_long)){
             logger.log(Level.WARNING, "Information about this latitude and longitude has expired");

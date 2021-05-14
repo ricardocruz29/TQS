@@ -121,18 +121,36 @@ public class CacheTest {
     public void TestWhenRequestExpiredIsNullAndNumberOfMissesIncreases() throws InterruptedException{
         AirMetricsData airMetricsData = new AirMetricsData();
         cache.storeRequest( "Porto" , airMetricsData);
+        AirMetricsData airMetricsData_Lisbon = new AirMetricsData();
+        Double latitude = 38.748611111111;
+        Double longitude = -9.1488888888889;
+        cache.storeRequest( latitude,longitude , airMetricsData_Lisbon);
 
+        //City
         assertThat(cache.getRequest("Porto")).isEqualTo(airMetricsData);
         assertThat(cache.getNumberOfRequests()).isEqualTo(1);
         assertThat(cache.getNumberOfHits()).isEqualTo(1);
         assertThat(cache.getNumberOfMisses()).isZero();
 
+        //Latitude and Longitude
+        assertThat(cache.getRequest(latitude,longitude)).isEqualTo(airMetricsData_Lisbon);
+        assertThat(cache.getNumberOfRequests()).isEqualTo(2);
+        assertThat(cache.getNumberOfHits()).isEqualTo(2);
+        assertThat(cache.getNumberOfMisses()).isZero();
+
         //Small time of expiration due to tests
         TimeUnit.SECONDS.sleep(15);
 
+        //City
         assertThat(cache.getRequest("Porto")).isNull();
-        assertThat(cache.getNumberOfRequests()).isEqualTo(2);
-        assertThat(cache.getNumberOfHits()).isEqualTo(1);
+        assertThat(cache.getNumberOfRequests()).isEqualTo(3);
+        assertThat(cache.getNumberOfHits()).isEqualTo(2);
         assertThat(cache.getNumberOfMisses()).isEqualTo(1);
+
+        //Latitude and Longitude
+        assertThat(cache.getRequest(latitude,longitude)).isNull();
+        assertThat(cache.getNumberOfRequests()).isEqualTo(4);
+        assertThat(cache.getNumberOfHits()).isEqualTo(2);
+        assertThat(cache.getNumberOfMisses()).isEqualTo(2);
     }
 }

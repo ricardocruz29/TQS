@@ -10,4 +10,8 @@ Last but not least, it should have all the sorts of tests.
 
 
 ## note: External API used: https://aqicn.org/map/world/
+## note: Link to access Swagger: http://localhost:8080/swagger-ui.html
+## note: To access sonarqube, go to localhost:9000 after starting the docker container of sonarqube
+## note: To run unit and integration tests, do mvn clean verify (react app must be running) -> There might occur a bug because of the name of the city in AQICNTest
+## note: Para fazer um novo pedido no sonar qube: mvn sonar:sonar   -Dsonar.projectKey=AirQuality   -Dsonar.host.url=http://127.0.0.1:9000   -Dsonar.login=49527d0a4a73e2f4aa85773611abe35eacb65f60
 

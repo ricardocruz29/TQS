@@ -43,14 +43,14 @@ public class AQICNTest {
 
     @Test
     public void TestWhenGetAirMetricsByLatLongReturnCorrectResults(){
-        assertThat(api_repository.getAirMetris_LatANDLong(48.856614,2.3522219)).isInstanceOf(AirMetricsData.class);
-        assertThat("Paris").isEqualTo(api_repository.getAirMetris_LatANDLong(48.856614,2.3522219).getParamData().getCity().getCity_name());
-        //Coordinates of Paris
+        assertThat(api_repository.getAirMetris_LatANDLong(38.748611111111,-9.1488888888889)).isInstanceOf(AirMetricsData.class);
+        assertThat("Entrecampos, Lisboa, Portugal").isEqualTo(api_repository.getAirMetris_LatANDLong(38.748611111111,-9.1488888888889).getParamData().getCity().getCity_name());
+        //Coordinates of Lisbon
         List<Double> lat_long = new ArrayList<>();
-        Double latitude = 48.856614;
-        Double longitude = 2.3522219;
+        Double latitude = 38.748611111111;
+        Double longitude = -9.1488888888889;
         lat_long.add(latitude);
         lat_long.add(longitude);
-        assertThat(lat_long).isEqualTo(api_repository.getAirMetris_City("Paris").getParamData().getCity().getLat_long());
+        assertThat(lat_long).isEqualTo(api_repository.getAirMetris_City("Entrecampos, Lisboa, Portugal").getParamData().getCity().getLat_long());
     }
 }

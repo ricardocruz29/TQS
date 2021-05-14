@@ -83,6 +83,7 @@ public class AQICN_API {
                 String [] data_split = data.split("-");
                 info[i] = (String) data_split[1];
             }
+            scanner.close();
             logger.log(Level.INFO, "API base url and token extrated succesfully");
             information = info;
         } catch (FileNotFoundException e) {

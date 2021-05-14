@@ -24,7 +24,7 @@ public class AirQualityService {
         AirMetricsData data = cache.getRequest(city);
 
         if ( data == null ){
-            logger.log(Level.INFO, "Cache didn't have the data. Requesting from the external API");
+            logger.log(Level.INFO, "Cache did not have the data. Requesting from the external API");
             data = this.aqicn_api.getAirMetris_City(city);
             cache.storeRequest(city, data);
         } else {
