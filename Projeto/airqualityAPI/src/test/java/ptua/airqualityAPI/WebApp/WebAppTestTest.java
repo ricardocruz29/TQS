@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 @ExtendWith(SeleniumJupiter.class)
-public class AirQualityTest {
+public class WebAppTestTest {
   @Test
   public void airQualityTest(FirefoxDriver driver) throws InterruptedException {
     driver.get("http://localhost:3000/");
