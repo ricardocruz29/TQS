@@ -10,7 +10,7 @@ pipeline {
               sh 'mvn clean install'               
           }
       }
-      psot {
+      post {
       	always {
       		junit '**/target/*-reports/TEST-*.xml'
       	}
